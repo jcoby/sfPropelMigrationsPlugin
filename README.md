@@ -1,5 +1,5 @@
 sfPropelMigrationsPlugin
-========================
+#####################==
 
 Easily migrate the database structure in a symfony 1.0 - 1.4 project without losing any data.
 
@@ -54,7 +54,7 @@ For the special case of your first migration, the plugin will write the migratio
 
 ### step two -- run the migration ###
 
-To actually update the database you have to run the `migrate` task. 
+To actually update the database you have to run the `migrate`}}}` task. 
 That will execute all the migrations from the current DB version up to the latest existing migration. (A automatically created table "schema_info" saves the current DB version in the DB itself.)
 You have to pass the migrate task an application parameter. Otherwise it won't be able to find the database configuration.
 To upgrade or downgrade to a specific DB version call the migrate script with the version as a parameter, e.g. `php symfony migrate frontend 20100319120757`
