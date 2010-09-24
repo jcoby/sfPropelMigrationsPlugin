@@ -146,7 +146,7 @@ class sfMigrator
   {
     // calculate version number for new migration
     $maxVersion = $this->getMaxVersion();
-    $newVersion = date("YmdGis");
+    $newVersion = date("YmdHis");
 
     // sanitize name
     $name = preg_replace('/[^a-zA-Z0-9]/', '_', $name);
